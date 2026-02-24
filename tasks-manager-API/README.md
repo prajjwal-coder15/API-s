@@ -4,8 +4,6 @@ A RESTful Task Manager API built with **Flask**, **MongoDB**, and **JWT Authenti
 
 This project demonstrates secure user authentication, protected routes, and user-based task management using a clean project structure.
 
----
-
 ## 🚀 Features
 
 - 🔐 User Registration (Password Hashing with Bcrypt)
@@ -18,8 +16,6 @@ This project demonstrates secure user authentication, protected routes, and user
 - 🧱 Clean MVC-style Project Structure
 - 🌱 Environment Variable Configuration
 
----
-
 ## 🛠 Tech Stack
 
 - **Python**
@@ -29,8 +25,6 @@ This project demonstrates secure user authentication, protected routes, and user
 - **Flask-JWT-Extended**
 - **Flask-Bcrypt**
 - **Python-Dotenv**
-
----
 
 ## 📂 Project Structure
 
@@ -54,9 +48,6 @@ flask_mongo_api/
 │   └── task_routes.py
 
 ````
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
@@ -65,8 +56,6 @@ flask_mongo_api/
 git clone https://github.com/yourusername/task-manager-api.git
 cd task-manager-api
 ````
-
----
 
 ### 2️⃣ Create Virtual Environment
 
@@ -88,8 +77,6 @@ Activate it:
 source .venv/bin/activate
 ```
 
----
-
 ### 3️⃣ Install Dependencies
 
 ```bash
@@ -101,8 +88,6 @@ Or manually:
 ```bash
 pip install flask flask-pymongo flask-jwt-extended flask-bcrypt python-dotenv
 ```
-
----
 
 ### 4️⃣ Configure Environment Variables
 
@@ -121,8 +106,6 @@ print(secrets.token_hex(32))
 ```
 <img width="1036" height="257" alt="Screenshot 2026-02-24 170604" src="https://github.com/user-attachments/assets/738fc645-a435-4454-a51a-331692275e2f" />
 
----
-
 ### 5️⃣ Run the Application
 
 ```bash
@@ -134,8 +117,6 @@ Server will start at:
 ```
 http://127.0.0.1:5000
 ```
-
----
 
 ## 📌 API Endpoints
 
@@ -185,8 +166,6 @@ Response:
 ```
 <img width="1594" height="835" alt="Screenshot 2026-02-24 163240" src="https://github.com/user-attachments/assets/827e46ef-0e3d-4584-91fd-150fac80b0b5" />
 
----
-
 ### 📝 Tasks (Protected Routes)
 
 All task routes require:
@@ -194,9 +173,6 @@ All task routes require:
 ```
 Authorization: Bearer <JWT_TOKEN>
 ```
-
----
-
 #### Create Task
 
 ```
@@ -213,16 +189,12 @@ Body:
 <img width="1599" height="630" alt="Screenshot 2026-02-24 164516" src="https://github.com/user-attachments/assets/1c59824f-2891-4fcc-b583-0540fc9fe68a" />
 <img width="1610" height="642" alt="Screenshot 2026-02-24 164530" src="https://github.com/user-attachments/assets/c6fb99b3-785e-45cb-9ab1-3653362ed81b" />
 
----
-
 #### Get All User Tasks
 
 ```
 GET /tasks/
 ```
 <img width="1600" height="881" alt="Screenshot 2026-02-24 164648" src="https://github.com/user-attachments/assets/a479b46c-a4bd-4121-91bb-c29fd48c24bc" />
-
----
 
 #### Update Task
 
@@ -239,7 +211,6 @@ Body:
 }
 ```
 ### update later
----
 
 #### Delete Task
 
@@ -247,7 +218,6 @@ Body:
 DELETE /tasks/<task_id>
 ```
 ### Update Later
----
 
 ## 🔐 Authentication Flow
 
@@ -260,7 +230,7 @@ DELETE /tasks/<task_id>
    ```
 4. Access protected task routes
 
----
+
 
 ## 🧠 What This Project Demonstrates
 
@@ -271,7 +241,6 @@ DELETE /tasks/<task_id>
 * Clean Flask project architecture
 * MongoDB integration
 
----
 
 ## 🚀 Future Improvements
 
@@ -282,16 +251,3 @@ DELETE /tasks/<task_id>
 * Docker Deployment
 * Production WSGI setup (Gunicorn)
 
----
-
-## 👨‍💻 Author
-
-<h2>PRAJJWAL KUMAR</h2><h3>CSE Engineer</h3>
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
-```
