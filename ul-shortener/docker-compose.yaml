@@ -19,9 +19,9 @@ services:
     restart: unless-stopped
 
     environment:
-      POSTGRES_DB: my_db
+      POSTGRES_DB: DB_name
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: pr@jj7878
+      POSTGRES_PASSWORD: DB_pd
 
     ports:
       - "5432:5432"
